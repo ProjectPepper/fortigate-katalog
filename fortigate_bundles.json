@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "source": "Fortinet FortiGate Security Bundles",
+    "source_url": "https://www.fortinet.com/de/support/support-services/fortiguard-security-subscriptions/fortigate-security-bundles",
+    "last_updated": "2026-07-01",
+    "hinweis": "Alle Bundles enthalten FortiCare Premium 24x7 Support. Reihenfolge: ATP < UTP < Enterprise. Einige ENT-Dienste (Inline-Malware, Attack Surface) sind auf Kleinstmodellen (z.B. 30G, 50G, 40F, 60F, 80F) nicht verfuegbar."
+  },
+  "bundles": [
+    {
+      "id": "ATP",
+      "name": "Advanced Threat Protection (ATP)",
+      "tier": 1,
+      "tagline": "Basisschutz gegen netzwerk- und dateibasierte Bedrohungen",
+      "best_for": "Kostenguenstiger Kern-Schutz; erste Verteidigungslinie",
+      "services": [
+        "FortiCare Premium 24x7 Support",
+        "Intrusion Prevention (IPS)",
+        "Antivirus / Anti-Malware",
+        "FortiSandbox Cloud (Zero-Day-Analyse)",
+        "Application Control",
+        "Inline CASB"
+      ]
+    },
+    {
+      "id": "UTP",
+      "name": "Unified Threat Protection (UTP)",
+      "tier": 2,
+      "tagline": "Netzwerk- + Web-Schutz - der empfohlene Standard fuer die meisten",
+      "best_for": "SMB, Zweigstellen, Home-Office - bestes Preis-/Leistungsverhaeltnis",
+      "services": [
+        "Alles aus ATP",
+        "Web-/URL-Filter",
+        "DNS-Filter",
+        "Video-Filter",
+        "Anti-Botnet / C2 (IP-Reputation)"
+      ]
+    },
+    {
+      "id": "ENT",
+      "name": "Enterprise Protection (ENT)",
+      "tier": 3,
+      "tagline": "Umfassender Schutz der gesamten Angriffsflaeche",
+      "best_for": "Mittlere/grosse Unternehmen, Compliance, hoehere Risiken",
+      "services": [
+        "Alles aus ATP + UTP",
+        "Data Loss Prevention (DLP)",
+        "KI-basierte Inline-Malware-Praevention",
+        "Attack Surface Security (Monitoring & Risk Scoring)",
+        "IoT-Erkennung & Schwachstellen-Korrelation",
+        "OT Security Service"
+      ]
+    }
+  ],
+  "feature_matrix": {
+    "IPS (Intrusion Prevention)": [
+      "ATP",
+      "UTP",
+      "ENT"
+    ],
+    "Antivirus / Anti-Malware": [
+      "ATP",
+      "UTP",
+      "ENT"
+    ],
+    "FortiSandbox Cloud": [
+      "ATP",
+      "UTP",
+      "ENT"
+    ],
+    "Application Control": [
+      "ATP",
+      "UTP",
+      "ENT"
+    ],
+    "Inline CASB": [
+      "ATP",
+      "UTP",
+      "ENT"
+    ],
+    "Web-/URL-Filter": [
+      "UTP",
+      "ENT"
+    ],
+    "DNS-Filter": [
+      "UTP",
+      "ENT"
+    ],
+    "Video-Filter": [
+      "UTP",
+      "ENT"
+    ],
+    "Anti-Botnet / C2": [
+      "UTP",
+      "ENT"
+    ],
+    "Data Loss Prevention (DLP)": [
+      "ENT"
+    ],
+    "KI-Inline-Malware-Praevention": [
+      "ENT"
+    ],
+    "Attack Surface Security": [
+      "ENT"
+    ],
+    "IoT-Erkennung": [
+      "ENT"
+    ],
+    "OT Security Service": [
+      "ENT"
+    ],
+    "FortiCare Premium 24x7": [
+      "ATP",
+      "UTP",
+      "ENT"
+    ]
+  }
+}
