@@ -3,7 +3,7 @@
     "source": "Fortinet Product Matrix",
     "source_url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/Fortinet_Product_Matrix.pdf",
     "matrix_version": "June 2026",
-    "last_updated": "2026-06-30",
+    "last_updated": "2026-07-02",
     "units": "Durchsatzwerte in Mbit/s (Laborwerte 'bis zu'); Zaehlwerte als ganze Zahl.",
     "notes": [
       "Threat Protection = Firewall+IPS+App-Control+Malware (Enterprise Mix, Logging aktiv) -> massgebliche Sizing-Kennzahl.",
