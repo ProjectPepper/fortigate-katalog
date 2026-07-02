@@ -13,7 +13,9 @@
       "poe_variant: -POE-Variante laut Matrix bestaetigt (sonst beim Distributor pruefen). ha_capable: alle Modelle HA-faehig (2x fuer Cluster).",
       "variants: bestaetigte Untermodelle laut Product Matrix 06/2026 bzw. Fortinet Ordering Guide NGFW (typ: wifi/poe/wifi-poe/storage/wan/interface/bypass/power). sku_basis=null: Variante laut Matrix vorhanden, SKU beim Distributor erfragen.",
       "wifi_variant: FortiWiFi-Variante verfuegbar (30G/40F/50G/60F/70G/80F). FortiWiFi-SKUs benoetigen einen Funk-Regionscode (z. B. FWF-50G-A).",
-      "Kombi-Varianten (z. B. FWF-51G, FG-51G-5G, FG-71G-POE) beim Distributor pruefen; hier ist je Variantentyp ein Hauptmodell gelistet."
+      "Kombi-Varianten (z. B. FWF-51G, FG-51G-5G, FG-71G-POE) beim Distributor pruefen; hier ist je Variantentyp ein Hauptmodell gelistet.",
+      "datasheet_url: verifizierter Link zum Fortinet-Datenblatt (optional; fehlt bei Modellen ohne bestaetigte URL).",
+      "eol_date: optionales Bestellende/EOL-Datum (ISO) - die App warnt 12 Monate im Voraus; hartes Ausfiltern weiterhin nur ueber das eol-Flag."
     ]
   },
   "models": [
@@ -57,7 +59,8 @@
           "sku_basis": "FG-31G-BDL-809-36",
           "hinweis": "mit 30 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-fortiwifi-30g-series"
     },
     {
       "model": "FortiGate 40F",
@@ -99,7 +102,8 @@
           "sku_basis": "FG-40F-3G4G-BDL-809-36",
           "hinweis": "integriertes LTE-Modem"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-fortiwifi-40f-series"
     },
     {
       "model": "FortiGate 50G",
@@ -165,7 +169,8 @@
           "sku_basis": null,
           "hinweis": "DSL-Variante laut Matrix; SKU beim Distributor erfragen"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-fortiwifi-50g-series"
     },
     {
       "model": "FortiGate 60F",
@@ -207,7 +212,8 @@
           "sku_basis": "FG-61F-BDL-809-36",
           "hinweis": "mit 128 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-fortiwifi-60f-series"
     },
     {
       "model": "FortiGate 70F",
@@ -243,7 +249,8 @@
           "sku_basis": "FG-71F-BDL-809-36",
           "hinweis": "mit 128 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-70f-series.pdf"
     },
     {
       "model": "FortiGate 70G",
@@ -297,7 +304,8 @@
           "sku_basis": "FG-71G-BDL-809-36",
           "hinweis": "mit 64 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-fortiwifi-70g-series"
     },
     {
       "model": "FortiGate 80F",
@@ -357,7 +365,8 @@
           "sku_basis": null,
           "hinweis": "LTE-Variante laut Matrix; SKU beim Distributor erfragen"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-fortiwifi-80f-series"
     },
     {
       "model": "FortiGate 90G",
@@ -393,7 +402,8 @@
           "sku_basis": "FG-91G-BDL-809-36",
           "hinweis": "mit 120 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-90g-series"
     },
     {
       "model": "FortiGate 120G",
@@ -429,7 +439,8 @@
           "sku_basis": "FG-121G-BDL-809-36",
           "hinweis": "mit 480 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-120g-series"
     },
     {
       "model": "FortiGate 200G",
@@ -465,7 +476,8 @@
           "sku_basis": "FG-201G-BDL-809-36",
           "hinweis": "mit 480 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-200g-series"
     },
     {
       "model": "FortiGate 400G",
@@ -537,7 +549,8 @@
           "sku_basis": "FG-701G-BDL-809-36",
           "hinweis": "mit 960 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-700g-series"
     },
     {
       "model": "FortiGate 900G",
@@ -579,7 +592,8 @@
           "sku_basis": "FG-900G-DC-BDL-809-36",
           "hinweis": "DC-Stromversorgung"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-900g-series"
     },
     {
       "model": "FortiGate 1000F",
@@ -615,7 +629,8 @@
           "sku_basis": "FG-1001F-BDL-809-36",
           "hinweis": "mit 960 GB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/resources/data-sheets/fortigate-1000f-series"
     },
     {
       "model": "FortiGate 1800F",
@@ -657,7 +672,8 @@
           "sku_basis": "FG-1800F-DC-BDL-809-36",
           "hinweis": "DC-Stromversorgung"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-1800f-series.pdf"
     },
     {
       "model": "FortiGate 2600F",
@@ -699,7 +715,8 @@
           "sku_basis": "FG-2600F-DC-BDL-809-36",
           "hinweis": "DC-Stromversorgung"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-2600f-series.pdf"
     },
     {
       "model": "FortiGate 3000F",
@@ -741,7 +758,8 @@
           "sku_basis": "FG-3000F-DC-BDL-809-36",
           "hinweis": "DC-Stromversorgung"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-3000f-series.pdf"
     },
     {
       "model": "FortiGate 3000G",
@@ -813,7 +831,8 @@
           "sku_basis": "FG-3501F-BDL-809-36",
           "hinweis": "mit 2x 1,92 TB lokalem Speicher (Logging)"
         }
-      ]
+      ],
+      "datasheet_url": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortigate-3500f-series.pdf"
     },
     {
       "model": "FortiGate 3500G",
