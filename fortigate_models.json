@@ -10,7 +10,10 @@
       "SSL-VPN ist ab FortiOS 7.6 abgekuendigt; fuer Remote-/Home-Office-Nutzer gilt 'max_dialup_ipsec_tunnels' (IPsec/FortiClient).",
       "max_s2s_ipsec_tunnels = Site-to-Site-Tunnel (z.B. zu Partner-Firewall). max_dialup_ipsec_tunnels = Client/Remote-Nutzer.",
       "Alle Modelle laut Product Matrix Juni 2026 aktuell (nicht EOL/EOS). Preise/SKUs vor Bestellung beim Distributor verifizieren.",
-      "poe_variant: -POE-Variante laut Matrix bestaetigt (sonst beim Distributor pruefen). ha_capable: alle Modelle HA-faehig (2x fuer Cluster)."
+      "poe_variant: -POE-Variante laut Matrix bestaetigt (sonst beim Distributor pruefen). ha_capable: alle Modelle HA-faehig (2x fuer Cluster).",
+      "variants: bestaetigte Untermodelle laut Product Matrix 06/2026 bzw. Fortinet Ordering Guide NGFW (typ: wifi/poe/wifi-poe/storage/wan/interface/bypass/power). sku_basis=null: Variante laut Matrix vorhanden, SKU beim Distributor erfragen.",
+      "wifi_variant: FortiWiFi-Variante verfuegbar (30G/40F/50G/60F/70G/80F). FortiWiFi-SKUs benoetigen einen Funk-Regionscode (z. B. FWF-50G-A).",
+      "Kombi-Varianten (z. B. FWF-51G, FG-51G-5G, FG-71G-POE) beim Distributor pruefen; hier ist je Variantentyp ein Hauptmodell gelistet."
     ]
   },
   "models": [
@@ -39,7 +42,22 @@
       "bundle_sku": "FG-30G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": true,
+      "variants": [
+        {
+          "typ": "wifi",
+          "model": "FortiWiFi 30G",
+          "sku_basis": "FWF-30G-BDL-809-36",
+          "hinweis": "integriertes WLAN; Regionscode (z. B. -A/-E) ergaenzen"
+        },
+        {
+          "typ": "storage",
+          "model": "FortiGate 31G",
+          "sku_basis": "FG-31G-BDL-809-36",
+          "hinweis": "mit 30 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 40F",
@@ -66,7 +84,22 @@
       "bundle_sku": "FG-40F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": true,
+      "variants": [
+        {
+          "typ": "wifi",
+          "model": "FortiWiFi 40F",
+          "sku_basis": "FWF-40F-BDL-809-36",
+          "hinweis": "integriertes WLAN"
+        },
+        {
+          "typ": "wan",
+          "model": "FortiGate 40F-3G4G",
+          "sku_basis": "FG-40F-3G4G-BDL-809-36",
+          "hinweis": "integriertes LTE-Modem"
+        }
+      ]
     },
     {
       "model": "FortiGate 50G",
@@ -93,7 +126,46 @@
       "bundle_sku": "FG-50G-BDL-809-36",
       "notes": "",
       "poe_variant": true,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": true,
+      "variants": [
+        {
+          "typ": "wifi",
+          "model": "FortiWiFi 50G",
+          "sku_basis": "FWF-50G-BDL-809-36",
+          "hinweis": "integriertes WLAN; Regionscode (z. B. -A/-E) ergaenzen"
+        },
+        {
+          "typ": "poe",
+          "model": "FortiGate 50G-SFP-POE",
+          "sku_basis": "FG-50G-SFP-POE-BDL-809-36",
+          "hinweis": "4x PoE+ (davon 1x WAN), 1x SFP"
+        },
+        {
+          "typ": "storage",
+          "model": "FortiGate 51G",
+          "sku_basis": "FG-51G-BDL-809-36",
+          "hinweis": "mit 64 GB lokalem Speicher (Logging)"
+        },
+        {
+          "typ": "wan",
+          "model": "FortiGate 50G-5G",
+          "sku_basis": "FG-50G-5G-BDL-809-36",
+          "hinweis": "integriertes 5G-Modem"
+        },
+        {
+          "typ": "interface",
+          "model": "FortiGate 50G-SFP",
+          "sku_basis": "FG-50G-SFP-BDL-809-36",
+          "hinweis": "SFP-Uplink"
+        },
+        {
+          "typ": "wan",
+          "model": "FortiGate 50G-DSL",
+          "sku_basis": null,
+          "hinweis": "DSL-Variante laut Matrix; SKU beim Distributor erfragen"
+        }
+      ]
     },
     {
       "model": "FortiGate 60F",
@@ -120,7 +192,22 @@
       "bundle_sku": "FG-60F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": true,
+      "variants": [
+        {
+          "typ": "wifi",
+          "model": "FortiWiFi 60F",
+          "sku_basis": "FWF-60F-BDL-809-36",
+          "hinweis": "integriertes WLAN"
+        },
+        {
+          "typ": "storage",
+          "model": "FortiGate 61F",
+          "sku_basis": "FG-61F-BDL-809-36",
+          "hinweis": "mit 128 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 70F",
@@ -147,7 +234,16 @@
       "bundle_sku": "FG-70F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 71F",
+          "sku_basis": "FG-71F-BDL-809-36",
+          "hinweis": "mit 128 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 70G",
@@ -174,7 +270,34 @@
       "bundle_sku": "FG-70G-BDL-809-36",
       "notes": "",
       "poe_variant": true,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": true,
+      "variants": [
+        {
+          "typ": "wifi",
+          "model": "FortiWiFi 70G",
+          "sku_basis": "FWF-70G-BDL-809-36",
+          "hinweis": "integriertes WLAN; Regionscode (z. B. -A/-E) ergaenzen"
+        },
+        {
+          "typ": "poe",
+          "model": "FortiGate 70G-POE",
+          "sku_basis": "FG-70G-POE-BDL-809-36",
+          "hinweis": "PoE+-Ports fuer APs/Kameras/Telefone"
+        },
+        {
+          "typ": "wifi-poe",
+          "model": "FortiWiFi 70G-POE",
+          "sku_basis": "FWF-70G-POE-BDL-809-36",
+          "hinweis": "WLAN + PoE kombiniert; Regionscode ergaenzen"
+        },
+        {
+          "typ": "storage",
+          "model": "FortiGate 71G",
+          "sku_basis": "FG-71G-BDL-809-36",
+          "hinweis": "mit 64 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 80F",
@@ -201,7 +324,40 @@
       "bundle_sku": "FG-80F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": true,
+      "variants": [
+        {
+          "typ": "wifi",
+          "model": "FortiWiFi 80F-2R",
+          "sku_basis": "FWF-80F-2R-BDL-809-36",
+          "hinweis": "integriertes WLAN (2 Radios)"
+        },
+        {
+          "typ": "storage",
+          "model": "FortiGate 81F",
+          "sku_basis": "FG-81F-BDL-809-36",
+          "hinweis": "mit 128 GB lokalem Speicher (Logging)"
+        },
+        {
+          "typ": "bypass",
+          "model": "FortiGate 80F-BYPASS",
+          "sku_basis": "FG-80F-BYPASS-BDL-809-36",
+          "hinweis": "LAN-Bypass-Portpaar"
+        },
+        {
+          "typ": "wan",
+          "model": "FortiGate 80F-DSL",
+          "sku_basis": null,
+          "hinweis": "DSL-Variante laut Matrix; SKU beim Distributor erfragen"
+        },
+        {
+          "typ": "wan",
+          "model": "FortiGate 80F-3G4G",
+          "sku_basis": null,
+          "hinweis": "LTE-Variante laut Matrix; SKU beim Distributor erfragen"
+        }
+      ]
     },
     {
       "model": "FortiGate 90G",
@@ -228,7 +384,16 @@
       "bundle_sku": "FG-90G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 91G",
+          "sku_basis": "FG-91G-BDL-809-36",
+          "hinweis": "mit 120 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 120G",
@@ -255,7 +420,16 @@
       "bundle_sku": "FG-120G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 121G",
+          "sku_basis": "FG-121G-BDL-809-36",
+          "hinweis": "mit 480 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 200G",
@@ -282,7 +456,16 @@
       "bundle_sku": "FG-200G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 201G",
+          "sku_basis": "FG-201G-BDL-809-36",
+          "hinweis": "mit 480 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 400G",
@@ -309,7 +492,16 @@
       "bundle_sku": "FG-400G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 401G",
+          "sku_basis": "FG-401G-BDL-809-36",
+          "hinweis": "mit 960 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 700G",
@@ -336,7 +528,16 @@
       "bundle_sku": "FG-700G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 701G",
+          "sku_basis": "FG-701G-BDL-809-36",
+          "hinweis": "mit 960 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 900G",
@@ -363,7 +564,22 @@
       "bundle_sku": "FG-900G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 901G",
+          "sku_basis": "FG-901G-BDL-809-36",
+          "hinweis": "mit 960 GB lokalem Speicher (Logging)"
+        },
+        {
+          "typ": "power",
+          "model": "FortiGate 900G DC",
+          "sku_basis": "FG-900G-DC-BDL-809-36",
+          "hinweis": "DC-Stromversorgung"
+        }
+      ]
     },
     {
       "model": "FortiGate 1000F",
@@ -390,7 +606,16 @@
       "bundle_sku": "FG-1000F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 1001F",
+          "sku_basis": "FG-1001F-BDL-809-36",
+          "hinweis": "mit 960 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 1800F",
@@ -417,7 +642,22 @@
       "bundle_sku": "FG-1800F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 1801F",
+          "sku_basis": "FG-1801F-BDL-809-36",
+          "hinweis": "mit 2x 960 GB lokalem Speicher (Logging)"
+        },
+        {
+          "typ": "power",
+          "model": "FortiGate 1800F DC",
+          "sku_basis": "FG-1800F-DC-BDL-809-36",
+          "hinweis": "DC-Stromversorgung"
+        }
+      ]
     },
     {
       "model": "FortiGate 2600F",
@@ -444,7 +684,22 @@
       "bundle_sku": "FG-2600F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 2601F",
+          "sku_basis": "FG-2601F-BDL-809-36",
+          "hinweis": "mit 2x 960 GB lokalem Speicher (Logging)"
+        },
+        {
+          "typ": "power",
+          "model": "FortiGate 2600F DC",
+          "sku_basis": "FG-2600F-DC-BDL-809-36",
+          "hinweis": "DC-Stromversorgung"
+        }
+      ]
     },
     {
       "model": "FortiGate 3000F",
@@ -471,7 +726,22 @@
       "bundle_sku": "FG-3000F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 3001F",
+          "sku_basis": "FG-3001F-BDL-809-36",
+          "hinweis": "mit 2x 960 GB lokalem Speicher (Logging)"
+        },
+        {
+          "typ": "power",
+          "model": "FortiGate 3000F DC",
+          "sku_basis": "FG-3000F-DC-BDL-809-36",
+          "hinweis": "DC-Stromversorgung"
+        }
+      ]
     },
     {
       "model": "FortiGate 3000G",
@@ -498,7 +768,16 @@
       "bundle_sku": "FG-3000G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 3001G",
+          "sku_basis": "FG-3001G-BDL-809-36",
+          "hinweis": "mit 2x 960 GB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 3500F",
@@ -525,7 +804,16 @@
       "bundle_sku": "FG-3500F-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 3501F",
+          "sku_basis": "FG-3501F-BDL-809-36",
+          "hinweis": "mit 2x 1,92 TB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 3500G",
@@ -552,7 +840,16 @@
       "bundle_sku": "FG-3500G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 3501G",
+          "sku_basis": "FG-3501G-BDL-809-36",
+          "hinweis": "mit 2x 1,92 TB lokalem Speicher (Logging)"
+        }
+      ]
     },
     {
       "model": "FortiGate 3800G",
@@ -579,7 +876,22 @@
       "bundle_sku": "FG-3800G-BDL-809-36",
       "notes": "",
       "poe_variant": false,
-      "ha_capable": true
+      "ha_capable": true,
+      "wifi_variant": false,
+      "variants": [
+        {
+          "typ": "storage",
+          "model": "FortiGate 3801G",
+          "sku_basis": "FG-3801G-BDL-809-36",
+          "hinweis": "mit 2x 1,92 TB lokalem Speicher (Logging)"
+        },
+        {
+          "typ": "power",
+          "model": "FortiGate 3800G DC",
+          "sku_basis": "FG-3800G-DC-BDL-809-36",
+          "hinweis": "DC-Stromversorgung"
+        }
+      ]
     }
   ]
 }
