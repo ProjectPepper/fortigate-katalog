@@ -15,7 +15,8 @@
       "wifi_variant: FortiWiFi-Variante verfuegbar (30G/40F/50G/60F/70G/80F). FortiWiFi-SKUs benoetigen einen Funk-Regionscode (z. B. FWF-50G-A).",
       "Kombi-Varianten (z. B. FWF-51G, FG-51G-5G, FG-71G-POE) beim Distributor pruefen; hier ist je Variantentyp ein Hauptmodell gelistet.",
       "datasheet_url: verifizierter Link zum Fortinet-Datenblatt (optional; fehlt bei Modellen ohne bestaetigte URL).",
-      "eol_date: optionales Bestellende/EOL-Datum (ISO) - die App warnt 12 Monate im Voraus; hartes Ausfiltern weiterhin nur ueber das eol-Flag."
+      "eol_date: optionales Bestellende/EOL-Datum (ISO) - die App warnt 12 Monate im Voraus; hartes Ausfiltern weiterhin nur ueber das eol-Flag.",
+      "eol_date-Recherche 2026-07-02: Fuer keines der 21 Modelle ist ein End-of-Order-/EOL-Termin veroeffentlicht (Fortinet-Lifecycle-Portal nur mit Login; oeffentliche Tracker wie ServiceExpress melden ausdruecklich Date Not Published). eol_date bleibt daher bewusst leer und wird erst bei offizieller Ankuendigung gepflegt."
     ]
   },
   "models": [
